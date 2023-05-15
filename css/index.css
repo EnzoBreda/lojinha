@@ -1,0 +1,126 @@
+:root {
+    --body-bg:white;
+    --box-shadow: 0px 0px 10px black;
+    --submit-color: #f1889b;
+    --submit-hover-color: #f99aaa;
+    --container-bg-color: white;
+    --input-text:#ffe5f0;; 
+    --input-text-hover: #fdcae1 ;
+    --p-color: black;
+
+}
+.dark-mode:root{
+    --body-bg: rgb(28, 1, 39);
+    --box-shadow: 0px 0px 5px black;
+    --submit-color: rgb(143, 211, 42);
+    --submit-hover-color: rgb(112, 168, 28);
+    --container-bg-color: rgb(30, 11, 53);
+    --input-text: rgb(147, 84, 207);
+    --input-text-hover: rgb(125, 67, 180);
+    --p-color: white;
+    
+}
+
+html {
+    font-family: 'Poppins';
+    overflow: hidden;
+    
+}
+
+body { 
+    padding: 0;
+    margin: 0;
+    background-color: var(--body-bg);
+}
+
+#container {
+    margin: auto;
+    margin-top: 5%;
+    font-size: 28px;
+    width: 380px;
+    height: 370px;
+    padding: 0 40px 0 40px;
+    background-color: var(--container-bg-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+}
+
+form {
+    height: 100%;
+}
+
+input.text:focus {
+    outline: 0;
+}
+
+
+input.text {
+    text-decoration: none;
+    font-size: 18px;
+    height: 32px;
+    width: 97%;
+    background-color: var(--input-text);
+    border: var(--input-text) solid;
+    border-radius: 7px;
+    box-shadow: 0px 0px 3px;
+    transition-duration: 0.3s;
+}
+
+input.text::placeholder {
+    color: rgb(19, 18, 18);
+}
+
+input.text:hover {
+    background-color: var(--input-text-hover);
+    border: var(--input-text-hover) solid;
+    
+}
+
+p {
+    font-size: 16px;
+    color: var(--p-color);
+    margin: 0;
+    text-align: left;
+    margin: 15px 0px -4px 0px;
+}
+
+input.submit {
+    font-size: 20px;
+    background-color: var(--submit-color);
+    border: 0;
+    width: 170px;
+    height: 40px;
+    border-radius: 7px;
+    margin-top: 45px;
+    transition-duration: 0.3s;
+}
+
+input.submit:hover {
+    background-color: var(--submit-hover-color);
+    cursor: pointer;
+}
+
+#login {
+    padding: 10px 0px;
+    width: 300px;
+    margin: 0;
+    font-size: 27px;
+}
+
+#validate {
+    text-align: center;
+   
+}
+
+#error {
+    position: absolute;
+    color: rgb(167, 15, 15);
+    text-align: left;
+    font-size: 15px;
+    margin: 2px 0 0 0;
+}
+
+#cadastro{
+    font-size: 14px;
+    margin-top: 30px;
+}
