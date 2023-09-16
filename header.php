@@ -37,7 +37,7 @@
                     <li id="logout" style="margin-top:15px; font-size:18px;"><a href="../logout.php?theme=dark">Sair</a></li>
                     <li style="margin-top: 2px; margin-left:18%"><a href=""> <img style="max-width:50px; max-height:50px;" src="../imagens/perfil_casinha.png" alt="" srcset=""> </a></li>
 
-                    <? } else if(isset($_GET['theme']) && $_GET['theme'] == 'light') { ?>    
+                    <? } else if(!isset($_GET['theme']) || $_GET['theme'] == 'light') { ?>    
                     <li id="logout" style="margin-top:15px; font-size:18px;"><a href="../logout.php?theme=light">Sair</a></li>
                     <li style="margin-top: 2px; margin-left:18%"><a href=""> <img style="max-width:50px; max-height:50px;" src="../imagens/perfil_casinha.png" alt="" srcset=""> </a></li>
                 <? } }
